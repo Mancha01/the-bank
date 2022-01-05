@@ -1,0 +1,16 @@
+html {
+  //Helps with accesability:
+  font-size: 100%;
+  //This ensures that if you add padding to an element the total width will include the padding and not be in addition to the padding:
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+}
