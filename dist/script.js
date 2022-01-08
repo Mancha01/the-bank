@@ -1,2 +1,2 @@
-"use strict";console.log("Hello World");
+"use strict";var btnHamburger=document.querySelector("#btnHamburger"),body=document.querySelector("body"),header=document.querySelector(".header"),overlay=document.querySelector(".overlay"),fadeElems=document.querySelectorAll(".has-fade");btnHamburger.addEventListener("click",(function(){header.classList.contains("open")?(body.classList.remove("noscroll"),header.classList.remove("open"),fadeElems.forEach((function(e){e.classList.remove("fade-in"),e.classList.add("fade-out")}))):(body.classList.add("noscroll"),header.classList.add("open"),fadeElems.forEach((function(e){e.classList.remove("fade-out"),e.classList.add("fade-in")})))}));
 //# sourceMappingURL=script.js.map

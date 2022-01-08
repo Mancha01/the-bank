@@ -1,0 +1,112 @@
+@use "../utils/" as *;
+
+.header {
+  //hamburger open styles
+  &.open {
+    .header__toggle {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .overlay {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: linear-gradient(var(--darkblue), transparent);
+  }
+  //spacing
+  .container {
+    padding-left: rem(24);
+    padding-right: rem(24);
+  }
+  nav {
+    position: relative;
+    background-color: var(--white);
+    padding-top: rem(17);
+    padding-bottom: rem(17);
+  }
+  &__logo {
+    img {
+      width: rem(141);
+      height: rem(22);
+    }
+  }
+  &__toggle {
+    > span {
+      display: block;
+      width: rem(26);
+      height: rem(2);
+      background-color: var(--darkblue);
+      transition: all 300ms ease-in-out;
+      transform-origin: rem(3) rem(1);
+
+      &:not(:last-child) {
+        margin-bottom: rem(5);
+      }
+    }
+  }
+  &__menu {
+    position: absolute;
+    width: calc(100% - rem(48));
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--white);
+    padding: rem(26);
+    margin-top: rem(24);
+    border-radius: rem(5);
+    a {
+      color: var(--darkblue);
+      padding: rem(10);
+      display: block;
+      text-align: center;
+    }
+  }
+  &__links {
+    a {
+      position: relative;
+      font-size: rem(14);
+      color: var(--grayishblue);
+      transition: color 500ms ease-in-out;
+      &:not(:last-child) {
+        margin-right: rem(32);
+      }
+      &::before {
+        content: "";
+        display: block;
+        height: rem(5);
+        left: 0;
+        right: 0;
+        position: absolute;
+        bottom: rem(-30);
+        background: var(--button-background);
+        opacity: 0;
+        transition: opacity 500ms ease-in-out;
+      }
+      &:hover {
+        color: var(--darkblue);
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    font-size: rem(14);
+    color: var(--white);
+    transition: opacity 500ms ease-in-out;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
