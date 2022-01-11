@@ -11,6 +11,12 @@
   height: rem(192);
   width: 100vw;
   background-color: var(--darkblue);
+  @include breakpoint-down(small) {
+    display: flex;
+    flex-direction: column;
+    height: rem(700);
+    justify-items: center;
+  }
   p {
     margin-top: rem(15);
     font-size: rem(14);

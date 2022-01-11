@@ -11,6 +11,14 @@
   padding-left: rem(162);
   padding-right: rem(162);
   padding-bottom: rem(103);
+  @include breakpoint-down(small) {
+    display: flex;
+    flex-direction: column;
+    height: rem(1844);
+    justify-items: center;
+    padding-left: rem(50);
+    padding-right: rem(50);
+  }
   h2 {
     font-weight: 300;
     color: var(--darkblue);
@@ -28,11 +36,20 @@
   p {
     font-size: rem(13);
     margin-top: rem(12);
+    text-align: justify;
+    @include breakpoint-down(small) {
+      br {
+        display: none;
+      }
+    }
   }
   img {
     width: rem(256);
     height: rem(199);
     border-radius: 2%;
+    @include breakpoint-down(small) {
+      width: rem(401);
+    }
   }
   &__desc {
     grid-column: 1/5;

@@ -10,8 +10,18 @@
   padding-right: rem(124);
   padding-top: rem(107);
   padding-bottom: rem(107);
+  @include breakpoint-down(small) {
+    display: flex;
+    flex-direction: column;
+    height: rem(1405);
+    justify-items: center;
+  }
   img {
     margin-bottom: rem(41);
+
+    @include breakpoint-down(small) {
+      justify-self: center;
+    }
   }
   h3 {
     font-weight: 200;
@@ -20,6 +30,12 @@
   }
   p {
     font-size: rem(13);
+    text-align: justify;
+    @include breakpoint-down(small) {
+      br {
+        display: none;
+      }
+    }
   }
   &__desc {
     grid-column: 1/5;
