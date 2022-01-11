@@ -1,0 +1,39 @@
+@use "../utils/" as *;
+.section1 {
+  display: flex;
+  flex-direction: row;
+  height: rem(652);
+  width: 100%;
+  padding-left: rem(163);
+  background-color: var(--white);
+  @include breakpoint-down(small) {
+    padding-left: rem(32);
+    text-align: center;
+  }
+  &__div1 {
+    margin-top: rem(169);
+  }
+
+  &__header {
+    font-weight: 400;
+    font-size: rem(40);
+    color: var(--darkblue);
+  }
+  &__paragraph {
+    font-size: rem(15);
+    margin-bottom: rem(38);
+  }
+  &__div2 {
+    width: rem(745);
+    background: url(/images/bg-intro-desktop.svg);
+    background-position: 0% 68%;
+    margin-left: rem(90);
+  }
+  &__img {
+    background: url(/images/image-mockups.png);
+    height: rem(778);
+    width: rem(617);
+    margin-left: rem(150);
+    background-position: -12% 80%;
+  }
+}
