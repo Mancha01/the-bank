@@ -4,14 +4,21 @@
   flex-direction: row;
   height: rem(652);
   width: 100%;
+  min-width: rem(1440);
   padding-left: rem(163);
   background-color: var(--white);
+
   @include breakpoint-down(small) {
-    padding-left: rem(32);
     text-align: center;
   }
   &__div1 {
     margin-top: rem(169);
+
+    @include breakpoint-down(small) {
+      position: absolute;
+      left: rem(300);
+      min-width: rem(400);
+    }
   }
 
   &__header {
@@ -28,6 +35,10 @@
     background: url(/images/bg-intro-desktop.svg);
     background-position: 0% 68%;
     margin-left: rem(90);
+
+    @include breakpoint-down(small) {
+      display: none;
+    }
   }
   &__img {
     background: url(/images/image-mockups.png);

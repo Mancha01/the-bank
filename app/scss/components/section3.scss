@@ -16,8 +16,11 @@
     flex-direction: column;
     height: rem(1844);
     justify-items: center;
-    padding-left: rem(50);
+    align-items: center;
+    padding-left: rem(600);
     padding-right: rem(50);
+
+    
   }
   h2 {
     font-weight: 300;
@@ -48,11 +51,16 @@
     height: rem(199);
     border-radius: 2%;
     @include breakpoint-down(small) {
-      width: rem(401);
+      width: rem(600);
     }
   }
   &__desc {
     grid-column: 1/5;
     grid-row: 1/1.5;
+  }
+  div{
+    @include breakpoint-down(small){
+      min-width: rem(600);
+    }
   }
 }
