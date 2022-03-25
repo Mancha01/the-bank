@@ -10,14 +10,16 @@
 
   @include breakpoint-down(small) {
     text-align: center;
+    min-width: rem(639);
   }
   &__div1 {
     margin-top: rem(169);
 
     @include breakpoint-down(small) {
       position: absolute;
-      left: rem(300);
+      left: rem(100);
       min-width: rem(400);
+      margin-top: rem(300);
     }
   }
 

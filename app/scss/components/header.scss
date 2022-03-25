@@ -1,6 +1,9 @@
 @use "../utils/" as *;
 
 .header {
+  @include breakpoint-down(small){
+    min-height: rem(58);
+  }
   //hamburger open styles
   &.open {
     .header__toggle {
@@ -27,9 +30,12 @@
   .container {
     padding-left: rem(163);
     padding-right: rem(163);
+  
     @include breakpoint-down(small) {
       padding-left: rem(22);
       padding-right: rem(22);
+      min-width: rem(639);
+     
     }
   }
   nav {

@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: rem(25);
-  width: 100vw;
+    min-width: rem(1400);
   height: rem(659);
   background-color: var(--white);
   padding-top: rem(93);
@@ -17,8 +17,9 @@
     height: rem(1844);
     justify-items: center;
     align-items: center;
-    padding-left: rem(600);
+    padding-left: rem(100);
     padding-right: rem(50);
+    min-width: rem(639);
 
     
   }
@@ -51,7 +52,7 @@
     height: rem(199);
     border-radius: 2%;
     @include breakpoint-down(small) {
-      width: rem(600);
+      width: rem(500);
     }
   }
   &__desc {
@@ -60,7 +61,7 @@
   }
   div{
     @include breakpoint-down(small){
-      min-width: rem(600);
+      min-width: rem(500);
     }
   }
 }
