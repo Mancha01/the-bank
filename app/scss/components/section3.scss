@@ -17,6 +17,12 @@
   margin-left: rem(130);
   margin-right: rem(10);
   }
+
+  @media (max-width: rem(375)){
+    min-width: rem(375);
+    margin-left: rem(2);
+    margin-right: rem(10);
+  }
   @include breakpoint-down(small) {
     display: flex;
     flex-direction: column;
@@ -25,7 +31,6 @@
     align-items: center;
     padding-left: rem(100);
     padding-right: rem(50);
-    max-width: 100vw;
     //min-width: rem(639);
 
     
@@ -61,8 +66,13 @@
     width: rem(256);
     height: rem(199);
     border-radius: 2%;
+
     @include breakpoint-down(small) {
       min-width: rem(500);
+    }
+
+    @media (max-width:rem(375)){
+      min-width: rem(330);
     }
   }
   &__desc {
@@ -70,8 +80,9 @@
     grid-row: 1/1.5;
   }
   div{
-    @include breakpoint-down(small){
-      //max-width: 100vw;
+    @media (max-width:rem(375)){
+      min-width: rem(350);
+      margin-right: rem(40);
     }
   }
 }
