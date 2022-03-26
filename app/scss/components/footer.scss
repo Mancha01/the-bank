@@ -9,14 +9,21 @@
   grid-template-columns: 1fr 1fr 1fr 3fr;
   column-gap: rem(115);
   height: rem(192);
-  width: 100%;
-  min-width: rem(1440);
+  //width: 100%;
+  //min-width: rem(1110);
   background-color: var(--darkblue);
+  
+  @media (max-width: rem(1200)){
+    min-width: rem(1200);
+  }
+  @media (max-width: rem(557)){
+    min-width: rem(557);
+  }
   @include breakpoint-down(small) {
     display: flex;
     flex-direction: column;
     height: rem(700);
-    min-width: rem(639);
+    //min-width: rem(639);
     justify-items: center;
     align-items: center;
   }

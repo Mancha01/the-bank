@@ -3,14 +3,21 @@
 .section2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100%;
-  min-width: rem(1400);
+ //min-width: rem(1110);
+  // min-width: rem(1110);
   height: rem(672);
   background-color: var(--lightgrayish-blue);
   padding-left: rem(150);
   padding-right: rem(124);
   padding-top: rem(107);
   padding-bottom: rem(107);
+
+  @media (max-width: rem(1200)){
+    min-width: rem(1200);
+  }
+  @media (max-width: rem(557)){
+    min-width: rem(557);
+  }
   @include breakpoint-down(small) {
     display: flex;
     justify-content: center;
@@ -18,7 +25,7 @@
     flex-direction: column;
     height: rem(1405);
     justify-items: center;
-    min-width: rem(639);
+    //min-width: rem(639);
   }
   img {
     margin-bottom: rem(41);

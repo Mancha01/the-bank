@@ -4,13 +4,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: rem(25);
-    min-width: rem(1400);
+   // min-width: rem(1110);
   height: rem(659);
   background-color: var(--white);
   padding-top: rem(93);
   padding-left: rem(162);
   padding-right: rem(162);
   padding-bottom: rem(103);
+
+  
+  @media (max-width: rem(486)){
+  margin-left: rem(100);
+  }
   @include breakpoint-down(small) {
     display: flex;
     flex-direction: column;
@@ -19,7 +24,7 @@
     align-items: center;
     padding-left: rem(100);
     padding-right: rem(50);
-    min-width: rem(639);
+    //min-width: rem(639);
 
     
   }
