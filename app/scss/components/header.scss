@@ -34,7 +34,6 @@
     @include breakpoint-down(small) {
       padding-left: rem(22);
       padding-right: rem(22);
-     // min-width: rem(639);
      
     }
   }
@@ -43,6 +42,10 @@
     background-color: var(--white);
     padding-top: rem(17);
     padding-bottom: rem(17);
+
+    @include breakpoint-down(small){
+      width: rem(540);
+    }
   }
   &__logo {
     img {
