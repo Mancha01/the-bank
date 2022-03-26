@@ -8,6 +8,10 @@
   padding-left: rem(163);
   background-color: var(--white);
 
+  @include breakpoint-down(small){
+    max-width: 100vw;
+  }
+
   
   &__div1 {
     margin-top: rem(300);

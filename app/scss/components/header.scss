@@ -44,7 +44,7 @@
     padding-bottom: rem(17);
 
     @include breakpoint-down(small){
-      width: rem(540);
+      width: rem(560);
     }
   }
   &__logo {
