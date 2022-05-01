@@ -15,12 +15,11 @@
   @media (max-width: rem(1200)){
     min-width: rem(1200);
   }
+  
   @media (max-width: rem(557)){
     min-width: rem(557);
   }
-  @media (max-width: rem(375)){
-    min-width: rem(375);
-  }
+  
   @include breakpoint-down(small) {
     display: flex;
     justify-content: center;
@@ -32,6 +31,7 @@
     padding-left: rem(20);
   padding-right: rem(20);
   text-align: center;
+  min-width: 100%;
   }
   img {
     margin-bottom: rem(41);

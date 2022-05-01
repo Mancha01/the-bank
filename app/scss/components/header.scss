@@ -43,12 +43,6 @@
     padding-top: rem(17);
     padding-bottom: rem(17);
 
-    @include breakpoint-down(small){
-      width: rem(560);
-    }
-    @media (max-width: rem(375)){
-      width: rem(375);
-    }
   }
   &__logo {
     img {

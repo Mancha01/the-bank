@@ -13,24 +13,17 @@
   padding-bottom: rem(103);
 
   
-  @media (max-width: rem(486)){
-  margin-left: rem(130);
-  margin-right: rem(10);
-  }
+  
 
-  @media (max-width: rem(375)){
-    min-width: rem(375);
-    margin-left: rem(2);
-    margin-right: rem(10);
-  }
+  
   @include breakpoint-down(small) {
     display: flex;
     flex-direction: column;
     height: rem(1844);
     justify-items: center;
     align-items: center;
-    padding-left: rem(100);
-    padding-right: rem(50);
+    padding-left: rem(110);
+    padding-right: rem(110);
     //min-width: rem(639);
 
     
@@ -68,21 +61,14 @@
     border-radius: 2%;
 
     @include breakpoint-down(small) {
-      min-width: rem(500);
+      min-width: rem(410);
     }
 
-    @media (max-width:rem(375)){
-      min-width: rem(330);
-    }
+  
   }
   &__desc {
     grid-column: 1/5;
     grid-row: 1/1.5;
   }
-  div{
-    @media (max-width:rem(375)){
-      min-width: rem(350);
-      margin-right: rem(40);
-    }
-  }
+  
 }

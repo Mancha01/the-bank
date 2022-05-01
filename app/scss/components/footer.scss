@@ -19,9 +19,6 @@
   @media (max-width: rem(557)){
     min-width: rem(557);
   }
-  @media (max-width: rem(375)){
-    min-width: rem(375);
-  }
   @include breakpoint-down(small) {
     display: flex;
     flex-direction: column;
@@ -30,6 +27,7 @@
     justify-items: center;
     align-items: center;
     text-align: center;
+    min-width: 100%;
   }
   p {
     margin-top: rem(15);

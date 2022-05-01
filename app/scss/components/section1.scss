@@ -16,18 +16,19 @@
 
     @include breakpoint-down(small) {
       position: absolute;
-     left: rem(60);
-      min-width: rem(400);
-      text-align: center;
+     left: rem(30);
+     margin-right: rem(15);
+     text-align: center;
+      
+     p{
+       br{
+         display: none;
+       }
+     }
      // margin-top: rem(300);
     }
 
-    @media (max-width: rem(375)){
-      width: rem(375);
-      left: rem(1);
-      min-width: rem(280);
-      text-align: center;
-    }
+    
   }
 
   &__header {

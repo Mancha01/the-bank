@@ -2,4 +2,8 @@
 
 .wrapper{
     max-width: rem(1440);
+
+    @include breakpoint-down(small){
+        max-width: 100%; 
+      }
 }
